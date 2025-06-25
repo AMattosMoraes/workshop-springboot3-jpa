@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="D:\Trabalho\Java\course - Copia"/>
 			<item value="D:\Trabalho\Java\course"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -26,9 +27,10 @@
 		</list>
 	</section>
 	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="https://repo1.maven.org/maven2/archetype-catalog.xml"/>
 		<list key="projectNameTemplate">
-			<item value="[artifactId]"/>
 			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]"/>
 			<item value="[artifactId]-[version]"/>
 			<item value="[groupId].[artifactId]"/>
 			<item value="[groupId].[artifactId]-[version]"/>
@@ -37,14 +39,17 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="amattosmores.course"/>
 		</list>
 		<list key="groupId">
+			<item value="amattosmores"/>
 		</list>
 		<list key="artifactId">
+			<item value="course"/>
 		</list>
 		<list key="projectNameTemplate">
-			<item value="[artifactId]"/>
 			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]"/>
 			<item value="[artifactId]-[version]"/>
 			<item value="[groupId].[artifactId]"/>
 			<item value="[groupId].[artifactId]-[version]"/>
@@ -84,5 +89,23 @@
 			<item value="[groupId].[artifactId]-[version]"/>
 			<item value="[name]"/>
 		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.wizards.CustomArchetypeDialog">
+	</section>
+	<section name="MavenDependenciesWizardPage">
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
+		<item key="width" value="480"/>
+		<item key="height" value="531"/>
+		<item key="x" value="600"/>
+		<item key="y" value="85"/>
 	</section>
 </section>

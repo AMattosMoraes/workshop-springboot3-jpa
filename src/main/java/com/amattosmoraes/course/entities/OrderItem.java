@@ -13,7 +13,7 @@ import java.util.Objects;
 @Table(name = "tb_order_item")
 public class OrderItem implements Serializable {
 
-    private static final Long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
     @EmbeddedId
     private OrderItemPk id = new OrderItemPk();
@@ -40,12 +40,11 @@ public class OrderItem implements Serializable {
         id.setOrder(order);
     }
 
-    public Product getProduct(){
+    public Product getProduct() {
         return id.getProduct();
     }
 
-//    @JsonIgnore
-    public void setProduct(Product product){
+    public void setProduct(Product product) {
         id.setProduct(product);
     }
 

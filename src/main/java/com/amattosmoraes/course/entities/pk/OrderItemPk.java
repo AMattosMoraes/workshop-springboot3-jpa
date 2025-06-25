@@ -10,10 +10,9 @@ import java.io.Serializable;
 import java.util.Objects;
 
 @Embeddable
-
 public class OrderItemPk implements Serializable {
 
-    private static final Long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
     @ManyToOne
     @JoinColumn(name = "order_id")
