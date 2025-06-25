@@ -1,4 +1,4 @@
-package com.amattosmoraes.course.repositories.exceptions;
+package com.amattosmoraes.course.resources.exceptions;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
