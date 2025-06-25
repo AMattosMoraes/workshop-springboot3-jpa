@@ -2,6 +2,7 @@ package com.amattosmoraes.course.services;
 
 import com.amattosmoraes.course.entities.User;
 import com.amattosmoraes.course.repositories.UserRepository;
+import com.amattosmoraes.course.services.exceptions.ResourcesNotFounfExceptions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -20,7 +21,7 @@ public class UserService {
 
     public User findById(Long id){
         Optional<User> obj =  repository.findById(id);
-        return obj.get();
+        return obj.orElseThrow(() -> new ResourcesNotFounfExceptions(id));
     }
 
     public User insert(User obj){
