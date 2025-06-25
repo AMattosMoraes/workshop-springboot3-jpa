@@ -19,8 +19,8 @@ public class UserResouces {
 
     @GetMapping
     public ResponseEntity<List<User>> findAll(){
-        List<User> list = service.findAll();
         return ResponseEntity.ok().body(list);
+        List<User> list = service.findAll();
     }
 
     @GetMapping(value = "/{id}")
@@ -40,6 +40,12 @@ public class UserResouces {
     public ResponseEntity<Void> delete(@PathVariable Long id){
         service.delete(id);
         return ResponseEntity.noContent().build();
+    }
+
+    @PutMapping(value = "/{id}")
+    public ResponseEntity<User> update(@PathVariable Long id, @RequestBody User obj){
+        obj = service.update(id, obj);
+        return ResponseEntity.ok().body(obj);
     }
 
 }
